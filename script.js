@@ -291,7 +291,17 @@ for(let i = 0; i < arrayBidemensional.length; i++) {
 console.log (`La edad Máxima es ${edadMaxima} y corresponde a ${nombrePersonas}`);
 
 
-/**10.4)El valor Mínimo 
- *      
+/**10.4) El valor Mínimo 
+ *  creamos la variable edadMinima para ir guardando las edades mientras se recorre    
 */
+let edadMinima = arrayBidemensional[0][1];
+
+for (let i = 0; i < arrayBidemensional.length; i++) {
+    console.log(arrayBidemensional[i][1]);
+    if (arrayBidemensional[i][1] < edadMinima) {
+      edadMinima = arrayBidemensional[i][1];
+      } 
+  }
+
+  console.log(`La edad mínima que hay es de: ${edadMinima}`);
 
